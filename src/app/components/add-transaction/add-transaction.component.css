@@ -1,0 +1,171 @@
+/* Form container styling */
+
+.transaction-form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: #f3f4f6;
+
+    border-radius: 10px;
+
+}
+ 
+/* Mat-card styling */
+
+mat-card {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+}
+ 
+/* Mat-card title styling */
+
+mat-card-title {
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    color: #ea0094;
+
+}
+ 
+/* Mat-form-field styling */
+
+mat-form-field {
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+}
+ 
+/* Mat-input and textarea styling */
+
+mat-form-field input, mat-form-field textarea {
+
+    font-size: 1rem;
+
+    color: #333;
+
+}
+ 
+mat-form-field textarea {
+
+    min-height: 80px;
+
+}
+ 
+/* Mat-card-actions styling */
+
+mat-card-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e0e0e0;
+
+}
+ 
+/* Primary button styling */
+
+button[color="primary"] {
+
+    background-color: #ea0094;
+
+    color: white;
+
+    margin-right: 10px;
+
+    padding: 8px 16px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    transition: background-color 0.3s ease;
+
+}
+ 
+button[color="primary"]:hover {
+
+    background-color: #ea0094;
+
+}
+ 
+/* Secondary button styling */
+
+button[type="button"] {
+
+    color: #ea0094;
+
+    font-size: 1rem;
+
+    padding: 8px 16px;
+
+    border-radius: 8px;
+
+    transition: background-color 0.3s ease;
+
+}
+ 
+button[type="button"]:hover {
+
+    background-color: #f1f1f1;
+
+}
+ 
+/* Responsive design */
+
+@media screen and (max-width: 600px) {
+
+    mat-card {
+
+        width: 90%;
+
+    }
+ 
+    mat-card-actions {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+ 
+    button {
+
+        width: 100%;
+
+        margin: 5px 0;
+
+    }
+
+}
+
+ 

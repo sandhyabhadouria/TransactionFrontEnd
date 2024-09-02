@@ -1,0 +1,189 @@
+/* Container for the button */
+
+.demo-button-container {
+
+    text-align: center;
+
+    margin: 20px 0;
+
+}
+ 
+/* Style for the button */
+
+.demo-button {
+
+    background-color: #ea0094; /* Purple background */
+
+    color: white; /* White text */
+
+    padding: 10px 20px;
+
+    font-size: 16px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    border: none;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+
+}
+ 
+.demo-button:hover {
+
+    background-color: #ea0094; /* Darker purple on hover */
+
+}
+ 
+/* Style for the table */
+
+.demo-table {
+
+    width: 100%;
+
+    border-spacing: 0;
+
+    border-collapse: collapse;
+
+    margin: 20px 0;
+
+    background-color: #f5f5f5; /* Light gray background */
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+ 
+/* Table header styling */
+
+.demo-table th {
+
+    background-color: #ea0094; /* Purple background for headers */
+
+    color: white;
+
+    padding: 12px 15px;
+
+    text-align: left;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+}
+ 
+/* Table cell styling */
+
+.demo-table td {
+
+    padding: 12px 15px;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    color: #333;
+
+}
+ 
+/* Alternating row colors */
+
+.demo-table tr:nth-child(even) {
+
+    background-color: #e0e0e0; /* Light gray background for even rows */
+
+}
+ 
+.demo-table tr:nth-child(odd) {
+
+    background-color: #ffffff; /* White background for odd rows */
+
+}
+ 
+/* Hover effect for table rows */
+
+.demo-table tr:hover {
+
+    background-color: #ffcc80; /* Orange background on hover */
+
+    transition: background-color 0.3s ease;
+
+}
+ 
+/* Context menu styling */
+
+.demo-table td {
+
+    position: relative;
+
+}
+ 
+.demo-table td:hover::after {
+
+    content: '⋮';
+
+    position: absolute;
+
+    right: 10px;
+
+    color: #ea0094;
+
+    cursor: pointer;
+
+}
+ 
+/* Responsive table */
+
+@media screen and (max-width: 768px) {
+
+    .demo-table, .demo-table thead, .demo-table tbody, .demo-table th, .demo-table td, .demo-table tr {
+
+        display: block;
+
+    }
+ 
+    .demo-table th {
+
+        position: absolute;
+
+        top: -9999px;
+
+        left: -9999px;
+
+    }
+ 
+    .demo-table td {
+
+        border: none;
+
+        position: relative;
+
+        padding-left: 50%;
+
+        text-align: right;
+
+    }
+ 
+    .demo-table td:before {
+
+        content: attr(data-label);
+
+        position: absolute;
+
+        left: 10px;
+
+        white-space: nowrap;
+
+        font-weight: bold;
+
+    }
+
+}
+
+ 
